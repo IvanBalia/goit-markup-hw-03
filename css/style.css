@@ -1,0 +1,132 @@
+:root {
+  --primary-text-color: #212121;
+  --additional-text-color: #757575;
+  --invert-text-color: #ffffff;
+  --primary-background-color: #ffffff;
+  --hero-background-color: #2f303a;
+  --footer-background-color: #000000;
+  --hover-color: #2196f3;
+  --team-background-color: #f5f4fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-background-color);
+}
+.product-section h2,
+.team-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: var(--primary-text-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header a:hover {
+  color: var(--hover-color);
+}
+header a:focus {
+  color: var(--hover-color);
+}
+header a {
+  font-size: 14px;
+  font-weight: 500;
+}
+.header-nav a {
+  color: var(--primary-text-color);
+}
+.header-contacts a {
+  color: var(--additional-text-color);
+}
+.hero-section {
+  background-color: var(--hero-background-color);
+  color: var(--invert-text-color);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+}
+.hero-section button {
+  background-color: var(--hover-color);
+  color: var(--invert-text-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  border-radius: 4px;
+}
+.features-section {
+  text-align: left;
+  font-size: 14px;
+}
+.features-section h3 {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  line-height: 1.17;
+}
+.features-section p {
+  color: var(--additional-text-color);
+  font-weight: 400;
+  line-height: 1.714;
+}
+.team-section {
+  background-color: var(--team-background-color);
+  color: var(--primary-text-color);
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.17;
+}
+.team-section h3 {
+  font-weight: 500;
+}
+.team-section span {
+  font-weight: 400;
+  color: var(--additional-text-color);
+}
+.footer-section {
+  background-color: var(--footer-background-color);
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.714;
+}
+.adress {
+  color: var(--invert-text-color);
+}
+.contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+.filters-section button {
+  background-color: var(--team-background-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+  border-radius: 4px;
+}
+.filters-section button:hover {
+  background-color: var(--hover-color);
+  color: var(--invert-text-color);
+  box-shadow: 2px 2px 4px #e5e5e5;
+}
+.filters-section button:focus {
+  background-color: var(--hover-color);
+  color: var(--invert-text-color);
+  box-shadow: 2px 2px 4px #e5e5e5;
+}
+.portfolio-section a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  color: var(--primary-text-color);
+}
+.portfolio-section span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.875;
+  color: var(--additional-text-color);
+}
