@@ -7,6 +7,7 @@
   --footer-background-color: #000000;
   --hover-color: #2196f3;
   --team-background-color: #f5f4fa;
+  --test-tomato: #ffffff;
 }
 *,
 *::before,
@@ -23,6 +24,7 @@ body {
   font-weight: 700;
   line-height: 1.17;
   color: var(--primary-text-color);
+  margin: 0;
 }
 ul {
   list-style: none;
@@ -53,9 +55,14 @@ header a {
   font-weight: 900;
   line-height: 1.36;
   text-align: center;
+  margin-top: 0;
+  width: 1600px;
+  height: 600px;
+  padding-top: 170px;
 }
 h1 {
   text-transform: uppercase;
+  margin: 0;
 }
 .hero-section button {
   background-color: var(--hover-color);
@@ -64,20 +71,42 @@ h1 {
   font-weight: 700;
   line-height: 1.875;
   border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
 }
 .features-section {
+  display: flex;
   text-align: left;
   font-size: 14px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 93px;
+  padding-bottom: 94px;
+  height: 288px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: var(--test-tomato);
+}
+.features-section li:not(:last-child) {
+  margin-right: 30px;
 }
 .features-section h3 {
   color: var(--primary-text-color);
   font-weight: 700;
   line-height: 1.17;
+  margin: 0;
+  width: 270px;
 }
 .features-section p {
   color: var(--additional-text-color);
   font-weight: 400;
   line-height: 1.714;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 .team-section {
   background-color: var(--team-background-color);
@@ -85,9 +114,33 @@ h1 {
   font-size: 16px;
   text-align: center;
   line-height: 1.17;
+  width: 1600px;
+  height: 648px;
+  padding-top: 94px;
+}
+.team-section ul {
+  display: flex;
+  width: 1170px;
+  margin-left: 200px;
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.team-section li {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+.team-section li:nth-child(n + 2) {
+  margin-left: 30px;
 }
 .team-section h3 {
   font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-section span {
   font-weight: 400;
@@ -99,6 +152,15 @@ h1 {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.714;
+  width: 1600px;
+  height: 252px;
+  padding-left: 215px;
+  padding-top: 60px;
+}
+.footer-section ul {
+  margin-top: 20px;
+  font-style: normal;
+  padding-left: 0;
 }
 .adress {
   color: var(--invert-text-color);
@@ -140,11 +202,11 @@ header {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 200px;
+  margin-right: 200px;
   align-items: center;
   height: 80px;
-  background-color: tomato;
+  background-color: var(--test-tomato);
 }
 nav {
   margin: 93px;
@@ -162,4 +224,27 @@ nav ul {
 }
 .header-contacts li:not(:first-child) {
   margin-left: 50px;
+}
+header a {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.product-section {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15xp;
+  padding-bottom: 94px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  background-color: var(--test-tomato);
+}
+.product-section ul {
+  display: flex;
+  padding: 0;
+  margin-top: 50px;
+}
+.product-section li:nth-child(n + 2) {
+  margin-left: 30px;
 }
