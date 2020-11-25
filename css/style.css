@@ -7,7 +7,7 @@
   --footer-background-color: #000000;
   --hover-color: #2196f3;
   --team-background-color: #f5f4fa;
-  --test-tomato: #f10d0d;
+  --test-tomato: #ffffff;
 }
 *,
 *::before,
@@ -170,14 +170,15 @@ h1 {
 }
 .filters-section {
   background-color: var(--test-tomato);
-  width: 1200px;
+  width: 1600px;
   margin-top: 0;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding-left: 195px;
-  padding-right: 195px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
   padding-top: 93px;
   padding-bottom: 16px;
+  border-top: 1px solid #ececec;
 }
 .filters-section ul {
   display: flex;
@@ -213,26 +214,47 @@ h1 {
   margin-top: 0;
   padding-top: 34px;
   padding-bottom: 93px;
+  background-color: var(--test-tomato);
 }
 .portfolio-section ul {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
 }
-.portfolio-section li div {
+.portfolio-section li {
   display: flex;
   flex-direction: column;
+  border: solid 1px #eeeeee;
+  margin-right: 30px;
+  margin-top: 0;
+  width: 370px;
 }
-.portfolio-section a {
+.portfolio-section li:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-section li:nth-child(n + 4) {
+  margin-top: 30px;
+}
+.portfolio-section div {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.portfolio-section b {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   color: var(--primary-text-color);
+  margin-top: 20px;
+  margin-left: 24px;
 }
 .portfolio-section span {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.875;
   color: var(--additional-text-color);
+  margin-top: 4px;
+  margin-left: 24px;
 }
 header {
   display: flex;
@@ -244,7 +266,6 @@ header {
   align-items: center;
   height: 80px;
   background-color: var(--test-tomato);
-  border-bottom: 1px solid #ececec;
 }
 nav {
   margin: 93px;
