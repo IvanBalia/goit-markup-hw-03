@@ -44,8 +44,8 @@ header {
 header div {
   display: flex;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5.6px;
+  padding-bottom: 5.6px;
 }
 header a:hover {
   color: var(--hover-color);
@@ -54,8 +54,11 @@ header a:focus {
   color: var(--hover-color);
 }
 header a {
+  display: block;
   font-size: 14px;
   font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .header-nav a {
   color: var(--primary-text-color);
@@ -210,4 +213,82 @@ h1 {
 .footer-section li:nth-child(n + 2) {
   margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
+}
+.main-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  border-top: 1px solid #ececec;
+}
+.filters-section {
+  background-color: var(--primary-background-color);
+  margin-bottom: 34px;
+}
+.filters-section ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12px;
+}
+.filters-section button {
+  background-color: var(--team-background-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+.filters-section li:nth-child(n + 2) {
+  margin-left: 8px;
+}
+.filters-section button:hover {
+  background-color: var(--hover-color);
+  color: var(--invert-text-color);
+  box-shadow: 2px 2px 4px #e5e5e5;
+}
+.filters-section button:focus {
+  background-color: var(--hover-color);
+  color: var(--invert-text-color);
+  box-shadow: 2px 2px 4px #e5e5e5;
+}
+.portfolio-section {
+  background-color: var(--primary-background-color);
+}
+.portfolio-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.portfolio-section li {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #eeeeee;
+  margin-right: 30px;
+  margin-top: 0;
+  width: 370px;
+}
+.portfolio-section li:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-section li:nth-child(n + 4) {
+  margin-top: 30px;
+}
+.portfolio-section .ul-items {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.portfolio-section b {
+  margin-top: 20px;
+  margin-left: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  color: var(--primary-text-color);
+}
+.portfolio-section span {
+  margin-top: 4px;
+  margin-left: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.875;
+  color: var(--additional-text-color);
 }
