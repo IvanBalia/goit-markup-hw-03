@@ -68,6 +68,9 @@ header a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+header a.link-active {
+  color: var(--hover-color);
+}
 .header-nav a {
   color: var(--primary-text-color);
 }
